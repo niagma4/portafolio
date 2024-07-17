@@ -60,4 +60,12 @@ body{
     text-decoration: none;
     color: #F6F6F6;
     border: 2px solid #22d4fd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.presentacion__enlaces__link:hover{
+    background-color: #272727;
 }
