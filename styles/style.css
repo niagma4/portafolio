@@ -1,8 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+:root{
+    --color_primario: #000000;
+    --color_secundario: #F6F6F6;
+    --color_terciario: #22d4fd;
+    --fuente_montserrat: "Montserrat", sans-serif;
+    --fuente_krona: "Krona One", sans-serif;
+}
+
 body{
-    background-color: #000000;
-    color: #F6F6F6;
+    background-color: var(--color_primario);
+    color: var(--color_secundario);
     box-sizing: border-box;
 }
 
@@ -16,10 +24,10 @@ body{
 }
 
 .header__menu__link{
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--fuente_montserrat);
     font-size: 24px;
     font-weight: 600;
-    color: #22d4fd;
+    color: var(--color_terciario);
     text-decoration: none;
 }
 
@@ -39,7 +47,7 @@ body{
 
 .presentacion__contenido__titulo{
     font-size: 36px;
-    font-family: "Krona One", sans-serif;
+    font-family: var(--fuente_krona);
 }
 
 .titulo-destaque{
@@ -48,7 +56,7 @@ body{
 
 .presentacion__contenido__texto{
     font-size: 24px;
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--fuente_montserrat);
 }
 
 .presentacion__enlaces{
@@ -61,7 +69,7 @@ body{
 
 .presentacion__enlaces__subtitulo{
     font-size: 24px;
-    font-family: "Krona One", sans-serif;
+    font-family: var(--fuente_krona);
     font-weight: 400;
 }
 
@@ -70,12 +78,12 @@ body{
     text-align: center;
     padding: 21.5px 0;
     border-radius: 8px;
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--fuente_montserrat);
     font-size: 24px;
     font-weight: 600;
     text-decoration: none;
     color: #F6F6F6;
-    border: 2px solid #22d4fd;
+    border: 2px solid var(--color_terciario);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -83,14 +91,14 @@ body{
 }
 
 .presentacion__enlaces__link:hover{
-    background-color: #272727;
+    background-color: var(--color_primario);
 }
 
 .footer{
-    background-color: #22d4fd;
+    background-color: var(--color_terciario);
     padding: 24px;
     color: black;
     text-align: center;
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--fuente_montserrat);
     font-weight: 400;
 }
